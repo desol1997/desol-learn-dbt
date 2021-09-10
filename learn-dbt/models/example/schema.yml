@@ -17,7 +17,6 @@ models:
             description: "The primary key for this table"
             tests:
                 - unique
-                - not_null
                 - relationships:
                     to: ref('my_first_dbt_model')
                     field: id
@@ -45,4 +44,4 @@ models:
           tests:
             - accepted_values:
                 values: ["BUILDING", "AUTOMOBILE", "MACHINERY", "HOUSEHOLD", "FURNITURE"]
-                
+
